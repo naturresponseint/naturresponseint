@@ -3,8 +3,17 @@ import {
   Handshake,
   VolunteerActivism,
 } from "@mui/icons-material";
-import { Box, Button, Divider, Grid, Typography } from "@mui/material";
+import {
+  Box,
+  Button,
+  Card,
+  CardMedia,
+  Divider,
+  Grid,
+  Typography,
+} from "@mui/material";
 import React from "react";
+import heroImage from "../../assets/images/backgrounds/water.jpg";
 
 function Hero() {
   return (
@@ -56,7 +65,48 @@ function Hero() {
           </Box>
         </Grid>
 
-        <Grid item xs={12} sm={9} sx={{ backgroundColor: "#094c3b" }}></Grid>
+        <Grid
+          item
+          xs={12}
+          sm={9}
+          sx={{
+            backgroundColor: "#094c3b",
+            color: "#fff",
+            py: { xs: 2, sm: 8 },
+            px: { xs: 2, sm: 8 },
+          }}
+        >
+          <Typography
+            sx={{
+              typography: {
+                xs: "h3",
+                sm: "h2",
+              },
+              textAlign: {
+                xs: "start",
+                sm: "left",
+              },
+              mb: 3,
+            }}
+          >
+            Creating a greener world for our generation and the next
+          </Typography>
+
+          <Card
+            sx={{
+              width: "100%",
+              height: { lg: "500px", sm: "100%" },
+              borderRadius: 0
+            }}
+          >
+            <CardMedia
+              component="img"
+              height="100%"
+              image={`${heroImage}`}
+              alt="Paella dish"
+            />
+          </Card>
+        </Grid>
       </Grid>
     </>
   );
