@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { createTheme } from "@mui/material";
 
 const theme = createTheme({
