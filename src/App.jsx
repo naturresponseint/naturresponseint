@@ -7,11 +7,15 @@ import "@fontsource/lora/400-italic.css";
 import "@fontsource/lora/500-italic.css";
 import "@fontsource/lora/600-italic.css";
 import "@fontsource/lora/700-italic.css";
+import { ThemeProvider } from "@emotion/react";
+import theme from "./theme";
 
 function App() {
   return (
     <>
-      <BaseRouter />
+      <ThemeProvider theme={theme}>
+        <BaseRouter />
+      </ThemeProvider>
     </>
   );
 }
