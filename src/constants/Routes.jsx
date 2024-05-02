@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import CircularProgress from "@mui/material/CircularProgress";
 import { siteLinks } from "./Link";
 import Navbar from "../layouts/Navbar";
+import Footer from "../layouts/Footer";
 
 const Landing = React.lazy(() => import("../pages/Landing"));
 const Home = React.lazy(() => import("../pages/Home"));
@@ -34,6 +35,7 @@ function BaseRouter() {
             <Route path={siteLinks?.Landing} element={<Landing />} />
             <Route path={siteLinks?.Home} element={<Home />} />
           </Routes>
+          <Footer/>
         </Suspense>
       </Router>
     </>
