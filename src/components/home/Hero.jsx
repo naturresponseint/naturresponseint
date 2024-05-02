@@ -3,7 +3,7 @@ import {
   Handshake,
   VolunteerActivism,
 } from "@mui/icons-material";
-import { Box, Button, Grid, Typography } from "@mui/material";
+import { Box, Button, Divider, Grid, Typography } from "@mui/material";
 import React from "react";
 
 function Hero() {
@@ -20,7 +20,7 @@ function Hero() {
             flexDirection: "column",
             justifyContent: "center",
             alignItems: "center",
-            py: { xs: 2, sm: 6 },
+            py: { xs: 2, sm: 8 },
             px: { xs: 2, sm: 4 },
             backgroundColor: "#ffe353",
           }}
@@ -38,6 +38,8 @@ function Hero() {
               Get Started <ArrowForward />
             </Button>
           </Box>
+
+          <Divider sx={{ width: "100%", color: "#000", mb: 2 }} />
 
           <Box sx={{ mb: 4 }}>
             <Handshake sx={{ fontSize: "50px", mb: 2 }} />
