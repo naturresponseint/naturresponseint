@@ -2,6 +2,7 @@ import { Stack } from "@mui/material";
 import React from "react";
 import Hero from "../components/home/Hero";
 import Header from "../components/home/Header";
+import SectionA from "../components/home/SectionA";
 
 function Home() {
   return (
@@ -10,6 +11,7 @@ function Home() {
         {/* Hero */}
         <Hero />
         <Header />
+        <SectionA />
       </Stack>
     </>
   );
