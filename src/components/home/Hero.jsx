@@ -87,16 +87,18 @@ function Hero() {
                 sm: "left",
               },
               mb: 3,
+              fontWeight: "bolder",
             }}
           >
             Creating a greener world for our generation and the next
           </Typography>
+          {/* <h1 style={{ textAlign: "center" }}>Creating a greener world for our generation and the next</h1> */}
 
           <Card
             sx={{
               width: "100%",
               height: { lg: "500px", sm: "100%" },
-              borderRadius: 0
+              borderRadius: 0,
             }}
           >
             <CardMedia
