@@ -13,7 +13,7 @@ function Header() {
         <Typography
           sx={{
             textAlign: "center",
-            typography: { xs: "h5", sm: "h1" },
+            typography: { xs: "h3", sm: "h1" },
             mb: 1,
             mt: 3,
             fontWeight: "900",
@@ -21,7 +21,15 @@ function Header() {
         >
           Planting Trees for Good
         </Typography>
-        <Divider sx={{ mb: 3, width: "300px", mx: "auto", borderWidth: "3px", borderColor: "#094c3b" }} />
+        <Divider
+          sx={{
+            mb: 3,
+            width: "300px",
+            mx: "auto",
+            borderWidth: "3px",
+            borderColor: "#094c3b",
+          }}
+        />
 
         <Card
           sx={{
@@ -39,7 +47,11 @@ function Header() {
           />
         </Card>
 
-        <Grid container spacing={2} sx={{ textAlign: "center", mt: 4, mb: 4 }}>
+        <Grid
+          container
+          spacing={2}
+          sx={{ textAlign: "center", mt: { sm: 4 }, mb: { sm: 4 } }}
+        >
           {headerData?.map((item) => (
             <>
               <Grid item xs={12} sm={4} key={item.id}>
