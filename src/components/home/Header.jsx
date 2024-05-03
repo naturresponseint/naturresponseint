@@ -15,7 +15,7 @@ function Header() {
             textAlign: "center",
             typography: { xs: "h3", sm: "h1" },
             mb: 1,
-            mt: 3,
+            mt: {sm: 3, xs: 1},
             fontWeight: "900",
           }}
         >
