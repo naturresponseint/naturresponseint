@@ -1,5 +1,13 @@
 /* eslint-disable no-unused-vars */
-import { Card, CardMedia, Paper, Typography, Box, Grid, Divider } from "@mui/material";
+import {
+  Card,
+  CardMedia,
+  Paper,
+  Typography,
+  Box,
+  Grid,
+  Divider,
+} from "@mui/material";
 import React from "react";
 import heroImage from "../../assets/images/backgrounds/nri3light.png";
 import { headerData } from "../../data/home/header";
@@ -15,7 +23,7 @@ function Header() {
             textAlign: "center",
             typography: { xs: "h3", sm: "h1" },
             mb: 1,
-            mt: {sm: 3, xs: 1},
+            mt: { sm: 3, xs: 1 },
             fontWeight: "900",
           }}
         >
@@ -50,14 +58,17 @@ function Header() {
         <Grid
           container
           spacing={2}
-          sx={{ textAlign: "center", mt: { sm: 4 }, mb: { sm: 4 } }}
+          sx={{ textAlign: "center", mt: { sm: 4 }, mb: 4 }}
         >
           {headerData?.map((item) => (
             <>
               <Grid item xs={12} sm={4} key={item.id}>
                 <Paper elevation={0}>
                   <Typography variant="h2">{item?.tally}</Typography>
-                  <Typography variant="body1" sx={{ textAlign: "center" }}>
+                  <Typography
+                    variant="body1"
+                    sx={{ textAlign: "center", mb: 2 }}
+                  >
                     {item?.content}
                   </Typography>
                 </Paper>
