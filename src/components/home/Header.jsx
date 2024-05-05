@@ -16,7 +16,11 @@ function Header() {
   return (
     <>
       <Box
-        sx={{ textAlign: "center", py: { sm: 8, xs: 2 }, px: { sm: 6, xs: 2 } }}
+        sx={{
+          textAlign: "center",
+          py: { sm: 8, xs: 2 },
+          px: { sm: 6, xs: 2 },
+        }}
       >
         <Typography
           sx={{
@@ -63,7 +67,7 @@ function Header() {
           {headerData?.map((item) => (
             <>
               <Grid item xs={12} sm={4} key={item.id}>
-                <Paper elevation={0}>
+                <Paper elevation={0} sx={{ backgroundColor: "#fffdf1" }}>
                   <Typography variant="h2">{item?.tally}</Typography>
                   <Typography
                     variant="body1"
