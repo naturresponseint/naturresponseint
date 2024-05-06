@@ -8,7 +8,7 @@ function GalleryGoals() {
     <>
       <Grid
         container
-        spacing={6}
+        spacing={4}
         sx={{
           backgroundColor: "#094c3b",
           color: "#fff",
