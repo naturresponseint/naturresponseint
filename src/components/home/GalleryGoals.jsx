@@ -1,6 +1,7 @@
-import { Grid, ImageList, ImageListItem, Typography } from "@mui/material";
+import { Box, Grid, ImageList, ImageListItem, Typography } from "@mui/material";
 import React from "react";
-import { galleryItems } from "../../data/home/gallery";
+import { galleryItems, goals } from "../../data/home/gallery";
+import { TaskAlt } from "@mui/icons-material";
 
 function GalleryGoals() {
   return (
@@ -22,11 +23,33 @@ function GalleryGoals() {
           <Typography sx={{ typography: { xs: "h3", sm: "h2" } }}>
             Inaanza na mimi
           </Typography>
-          <Typography variant="body1" sx={{ mt: 2, textAlign: "start" }}>
+          <Typography variant="body1" sx={{ mt: 2, textAlign: "start", mb: 2 }}>
             We believe in working together in ensuring that we create a good
             ecosystem for all living and resources our beautiful Earth has
             enabled us to enjoy.
           </Typography>
+          {goals?.map((item) => (
+            <>
+              <Box sx={{ mb: 2 }}>
+                <Typography
+                  variant="subtitle1"
+                  gutterBottom
+                  sx={{
+                    display: "grid",
+                    gridTemplateColumns: "auto 1fr",
+                    alignItems: "center",
+                    gap: 1,
+                  }}
+                >
+                  <TaskAlt color="warning" />
+                  <span>{item?.title}</span>
+                </Typography>
+                <Typography variant="body2" gutterBottom>
+                  {item?.description}
+                </Typography>
+              </Box>
+            </>
+          ))}
         </Grid>
 
         <Grid item xs={12} sm={6}>

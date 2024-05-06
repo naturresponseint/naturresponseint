@@ -23,4 +23,22 @@ const galleryItems = [
   },
 ];
 
-export { galleryItems };
+const goals = [
+  {
+    id: 1,
+    title: "Training and capacity building.",
+    description: "Identifying, nurturing and developing talents. ",
+  },
+  {
+    id: 2,
+    title: "Training and capacity building.",
+    description: "Identifying, nurturing and developing talents. ",
+  },
+  {
+    id: 3,
+    title: "Training and capacity building.",
+    description: "Identifying, nurturing and developing talents. ",
+  },
+];
+
+export { galleryItems, goals };
