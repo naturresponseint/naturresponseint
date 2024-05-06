@@ -44,7 +44,11 @@ function Objectives() {
           }}
         />
 
-        <Grid container spacing={1.5} sx={{ mt: 2, px: { xs: 4, sm: 0 } }}>
+        <Grid
+          container
+          spacing={1.5}
+          sx={{ mt: 2, px: { xs: 4, sm: 0 }, mb: 2 }}
+        >
           {objectiveSection?.map((item) => (
             <>
               <Grid item xs={12} sm={3} key={item.id}>
@@ -83,6 +87,20 @@ function Objectives() {
             </>
           ))}
         </Grid>
+
+        <Button
+          sx={{
+            mt: 4,
+            mb: { xs: 4, sm: 0 },
+            borderRadius: 0,
+            backgroundColor: "#ff521a",
+            color: "#fff",
+          }}
+          variant="contained"
+          size="large"
+        >
+          Discover More
+        </Button>
       </Box>
     </>
   );
