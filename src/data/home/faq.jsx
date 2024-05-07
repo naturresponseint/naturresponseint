@@ -11,7 +11,7 @@ const faq = [
   },
   {
     id: 5,
-    question: "Get Involved",
+    question: "How can I get involved?",
     answer: `Would you like to be part of our movement? Become a member of Natur Response International and help us make the world a better place for all living beings. Your membership enables us to continue planting trees, protecting habitats, and conducting environmental education programs to raise awareness of environmental issues. Together, we can bring about the change our world urgently needs. Join us on this journey and be part of the movement to protect our Mother Earth!`,
   },
 ];
