@@ -6,6 +6,7 @@ import SectionA from "../components/home/SectionA";
 import Objectives from "../components/home/Objectives";
 import GalleryGoals from "../components/home/GalleryGoals";
 import TheTeam from "../components/home/TheTeam";
+import FAQ from "../components/home/FAQ";
 
 function Home() {
   return (
@@ -17,6 +18,7 @@ function Home() {
         <Objectives />
         <GalleryGoals />
         <TheTeam/>
+        <FAQ />
       </Stack>
     </>
   );

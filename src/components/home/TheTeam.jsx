@@ -6,9 +6,8 @@ import {
   Typography,
   CardMedia,
   CardContent,
-  CardActions,
   Button,
-  IconButton,
+  Tooltip,
 } from "@mui/material";
 import React from "react";
 import { team } from "../../data/home/team";
@@ -84,9 +83,15 @@ function TheTeam() {
                     }}
                   >
                     {/* Position the Button at bottom-right corner */}
-                    <Button variant="contained" disableElevation sx={{ borderRadius: 0, backgroundColor: "#fff" }}>
-                      <ArrowForward color="success"/>
-                    </Button>
+                    <Tooltip title="Learn More">
+                      <Button
+                        variant="contained"
+                        disableElevation
+                        sx={{ borderRadius: 0, backgroundColor: "#fff" }}
+                      >
+                        <ArrowForward color="success" />
+                      </Button>
+                    </Tooltip>
                   </CardContent>
                 </Card>
               </Grid>
