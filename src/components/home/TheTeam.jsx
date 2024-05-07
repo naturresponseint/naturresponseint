@@ -84,8 +84,8 @@ function TheTeam() {
                     }}
                   >
                     {/* Position the Button at bottom-right corner */}
-                    <Button variant="contained">
-                      <ArrowForward />
+                    <Button variant="contained" disableElevation sx={{ borderRadius: 0, backgroundColor: "#fff" }}>
+                      <ArrowForward color="success"/>
                     </Button>
                   </CardContent>
                 </Card>
