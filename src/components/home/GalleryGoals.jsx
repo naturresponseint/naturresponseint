@@ -19,7 +19,17 @@ function GalleryGoals() {
           mt: { xs: 1, sm: 4 },
         }}
       >
-        <Grid item xs={12} sm={6}>
+        <Grid
+          item
+          xs={12}
+          sm={6}
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "start",
+            flexDirection: "column",
+          }}
+        >
           <Typography sx={{ typography: { xs: "h3", sm: "h2" } }}>
             Inaanza na mimi
           </Typography>
