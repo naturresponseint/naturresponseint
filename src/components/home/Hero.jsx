@@ -97,7 +97,7 @@ function Hero() {
           <Card
             sx={{
               width: "100%",
-              height: { lg: "500px", sm: "100%" },
+              height: { lg: "500px",  },
               borderRadius: 0,
             }}
           >

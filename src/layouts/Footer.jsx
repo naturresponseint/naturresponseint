@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import logo from "../assets/images/logo/nri-article.svg";
 import {
@@ -30,9 +31,15 @@ function Footer() {
         <CssBaseline />
         <Grid container spacing={2}>
           <Grid item xs={12} lg={3}>
-            <div>
+            {/* <div>
               <img src={logo} alt="NRI" />
-            </div>
+            </div> */}
+            <Typography variant="h6" sx={{ fontWeight: "bold" }}>
+              Natur Response International
+            </Typography>
+            <Typography variant="caption" sx={{ mt: 2 }}>
+              Creating a greener world for our generation and the next
+            </Typography>
           </Grid>
 
           <Grid item xs={12} lg={3}>
@@ -101,6 +108,10 @@ function Footer() {
             </div>
           </Grid>
         </Grid>
+
+        <Divider />
+
+        <Typography sx={{ textAlign: "center", mt: 2 }}>© 2024 Natur Response. All rights reserved.</Typography>
       </Box>
     </>
   );
